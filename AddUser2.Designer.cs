@@ -49,30 +49,17 @@
             this.National = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.Subscription = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.Naghsh = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.Time = new System.Windows.Forms.TextBox();
             this.Submit = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dB1DataSet = new WindowsFormsApp4.DB1DataSet();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iDUsersDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.familyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mobilePhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subscriptionStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nationalidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usersTableAdapter = new WindowsFormsApp4.DB1DataSetTableAdapters.UsersTableAdapter();
+            this.Time = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.Naghsh = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dB1DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -149,7 +136,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(793, 264);
+            this.label6.Location = new System.Drawing.Point(794, 228);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(43, 20);
             this.label6.TabIndex = 10;
@@ -157,7 +144,7 @@
             // 
             // Address
             // 
-            this.Address.Location = new System.Drawing.Point(243, 261);
+            this.Address.Location = new System.Drawing.Point(244, 225);
             this.Address.Multiline = true;
             this.Address.Name = "Address";
             this.Address.Size = new System.Drawing.Size(544, 34);
@@ -235,7 +222,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(793, 304);
+            this.label11.Location = new System.Drawing.Point(794, 268);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 20);
             this.label11.TabIndex = 20;
@@ -243,46 +230,11 @@
             // 
             // Subscription
             // 
-            this.Subscription.Location = new System.Drawing.Point(243, 301);
+            this.Subscription.Location = new System.Drawing.Point(244, 265);
             this.Subscription.Multiline = true;
             this.Subscription.Name = "Subscription";
             this.Subscription.Size = new System.Drawing.Size(544, 34);
             this.Subscription.TabIndex = 19;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(794, 221);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(35, 20);
-            this.label12.TabIndex = 21;
-            this.label12.Text = ":نقش";
-            // 
-            // Naghsh
-            // 
-            this.Naghsh.FormattingEnabled = true;
-            this.Naghsh.Location = new System.Drawing.Point(587, 221);
-            this.Naghsh.Name = "Naghsh";
-            this.Naghsh.Size = new System.Drawing.Size(201, 28);
-            this.Naghsh.TabIndex = 22;
-            this.Naghsh.SelectedIndexChanged += new System.EventHandler(this.Naghsh_SelectedIndexChanged);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(451, 229);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(105, 20);
-            this.label13.TabIndex = 23;
-            this.label13.Text = ":مدت زمان اشتراک";
-            // 
-            // Time
-            // 
-            this.Time.Location = new System.Drawing.Point(244, 221);
-            this.Time.Multiline = true;
-            this.Time.Name = "Time";
-            this.Time.Size = new System.Drawing.Size(201, 34);
-            this.Time.TabIndex = 24;
             // 
             // Submit
             // 
@@ -304,132 +256,6 @@
             this.dB1DataSet.DataSetName = "DB1DataSet";
             this.dB1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDUsersDataGridViewTextBoxColumn,
-            this.fnameDataGridViewTextBoxColumn,
-            this.familyDataGridViewTextBoxColumn,
-            this.pnameDataGridViewTextBoxColumn,
-            this.userNameDataGridViewTextBoxColumn,
-            this.passwordDataGridViewTextBoxColumn,
-            this.mobilePhoneDataGridViewTextBoxColumn,
-            this.ageDataGridViewTextBoxColumn,
-            this.addresDataGridViewTextBoxColumn,
-            this.subscriptionStatusDataGridViewTextBoxColumn,
-            this.nationalidDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.usersBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 418);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(985, 150);
-            this.dataGridView1.TabIndex = 26;
-            // 
-            // iDUsersDataGridViewTextBoxColumn
-            // 
-            this.iDUsersDataGridViewTextBoxColumn.DataPropertyName = "ID_Users";
-            this.iDUsersDataGridViewTextBoxColumn.HeaderText = "ID_Users";
-            this.iDUsersDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.iDUsersDataGridViewTextBoxColumn.Name = "iDUsersDataGridViewTextBoxColumn";
-            this.iDUsersDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDUsersDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // fnameDataGridViewTextBoxColumn
-            // 
-            this.fnameDataGridViewTextBoxColumn.DataPropertyName = "fname";
-            this.fnameDataGridViewTextBoxColumn.HeaderText = "fname";
-            this.fnameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.fnameDataGridViewTextBoxColumn.Name = "fnameDataGridViewTextBoxColumn";
-            this.fnameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.fnameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // familyDataGridViewTextBoxColumn
-            // 
-            this.familyDataGridViewTextBoxColumn.DataPropertyName = "Family";
-            this.familyDataGridViewTextBoxColumn.HeaderText = "Family";
-            this.familyDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.familyDataGridViewTextBoxColumn.Name = "familyDataGridViewTextBoxColumn";
-            this.familyDataGridViewTextBoxColumn.ReadOnly = true;
-            this.familyDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // pnameDataGridViewTextBoxColumn
-            // 
-            this.pnameDataGridViewTextBoxColumn.DataPropertyName = "p_name";
-            this.pnameDataGridViewTextBoxColumn.HeaderText = "p_name";
-            this.pnameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.pnameDataGridViewTextBoxColumn.Name = "pnameDataGridViewTextBoxColumn";
-            this.pnameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.pnameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // userNameDataGridViewTextBoxColumn
-            // 
-            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "UserName";
-            this.userNameDataGridViewTextBoxColumn.HeaderText = "UserName";
-            this.userNameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
-            this.userNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.userNameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
-            this.passwordDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            this.passwordDataGridViewTextBoxColumn.ReadOnly = true;
-            this.passwordDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // mobilePhoneDataGridViewTextBoxColumn
-            // 
-            this.mobilePhoneDataGridViewTextBoxColumn.DataPropertyName = "MobilePhone";
-            this.mobilePhoneDataGridViewTextBoxColumn.HeaderText = "MobilePhone";
-            this.mobilePhoneDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.mobilePhoneDataGridViewTextBoxColumn.Name = "mobilePhoneDataGridViewTextBoxColumn";
-            this.mobilePhoneDataGridViewTextBoxColumn.ReadOnly = true;
-            this.mobilePhoneDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // ageDataGridViewTextBoxColumn
-            // 
-            this.ageDataGridViewTextBoxColumn.DataPropertyName = "Age";
-            this.ageDataGridViewTextBoxColumn.HeaderText = "Age";
-            this.ageDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
-            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ageDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // addresDataGridViewTextBoxColumn
-            // 
-            this.addresDataGridViewTextBoxColumn.DataPropertyName = "Addres";
-            this.addresDataGridViewTextBoxColumn.HeaderText = "Addres";
-            this.addresDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.addresDataGridViewTextBoxColumn.Name = "addresDataGridViewTextBoxColumn";
-            this.addresDataGridViewTextBoxColumn.ReadOnly = true;
-            this.addresDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // subscriptionStatusDataGridViewTextBoxColumn
-            // 
-            this.subscriptionStatusDataGridViewTextBoxColumn.DataPropertyName = "SubscriptionStatus";
-            this.subscriptionStatusDataGridViewTextBoxColumn.HeaderText = "SubscriptionStatus";
-            this.subscriptionStatusDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.subscriptionStatusDataGridViewTextBoxColumn.Name = "subscriptionStatusDataGridViewTextBoxColumn";
-            this.subscriptionStatusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.subscriptionStatusDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // nationalidDataGridViewTextBoxColumn
-            // 
-            this.nationalidDataGridViewTextBoxColumn.DataPropertyName = "national_id";
-            this.nationalidDataGridViewTextBoxColumn.HeaderText = "national_id";
-            this.nationalidDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.nationalidDataGridViewTextBoxColumn.Name = "nationalidDataGridViewTextBoxColumn";
-            this.nationalidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nationalidDataGridViewTextBoxColumn.Width = 150;
-            // 
             // usersBindingSource
             // 
             this.usersBindingSource.DataMember = "Users";
@@ -439,18 +265,51 @@
             // 
             this.usersTableAdapter.ClearBeforeFill = true;
             // 
+            // Time
+            // 
+            this.Time.Location = new System.Drawing.Point(244, 305);
+            this.Time.Multiline = true;
+            this.Time.Name = "Time";
+            this.Time.Size = new System.Drawing.Size(201, 34);
+            this.Time.TabIndex = 30;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(451, 313);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(105, 20);
+            this.label13.TabIndex = 29;
+            this.label13.Text = ":مدت زمان اشتراک";
+            // 
+            // Naghsh
+            // 
+            this.Naghsh.FormattingEnabled = true;
+            this.Naghsh.Location = new System.Drawing.Point(587, 305);
+            this.Naghsh.Name = "Naghsh";
+            this.Naghsh.Size = new System.Drawing.Size(201, 28);
+            this.Naghsh.TabIndex = 28;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(794, 305);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(35, 20);
+            this.label12.TabIndex = 27;
+            this.label12.Text = ":نقش";
+            // 
             // AddUser2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1036, 605);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.Submit);
             this.Controls.Add(this.Time);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.Naghsh);
             this.Controls.Add(this.label12);
+            this.Controls.Add(this.Submit);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.Subscription);
             this.Controls.Add(this.label10);
@@ -471,14 +330,12 @@
             this.Controls.Add(this.Fname);
             this.Controls.Add(this.Famile);
             this.Controls.Add(this.Name);
-            //this.Name = "AddUser2";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "افزودن کاربر";
             this.Load += new System.EventHandler(this.AddUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dB1DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -506,26 +363,14 @@
         private System.Windows.Forms.TextBox National;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox Subscription;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox Naghsh;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox Time;
         private System.Windows.Forms.Button Submit;
         private System.Windows.Forms.BindingSource bindingSource1;
         private DB1DataSet dB1DataSet;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource usersBindingSource;
         private DB1DataSetTableAdapters.UsersTableAdapter usersTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDUsersDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn familyDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mobilePhoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ageDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addresDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn subscriptionStatusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nationalidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox Time;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox Naghsh;
+        private System.Windows.Forms.Label label12;
     }
 }

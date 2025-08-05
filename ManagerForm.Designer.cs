@@ -40,9 +40,9 @@
             this.اشتراکهاToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.تعریفاشتراکToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ویرایشاشتراکToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.وضعیتاشتراککاربرانToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.تراکنشهاToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.حسابداریToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.وضعیتاشتراککاربرانToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -141,6 +141,12 @@
             this.ویرایشاشتراکToolStripMenuItem.Size = new System.Drawing.Size(295, 34);
             this.ویرایشاشتراکToolStripMenuItem.Text = "ویرایش اشتراک";
             // 
+            // وضعیتاشتراککاربرانToolStripMenuItem
+            // 
+            this.وضعیتاشتراککاربرانToolStripMenuItem.Name = "وضعیتاشتراککاربرانToolStripMenuItem";
+            this.وضعیتاشتراککاربرانToolStripMenuItem.Size = new System.Drawing.Size(295, 34);
+            this.وضعیتاشتراککاربرانToolStripMenuItem.Text = "وضعیت اشتراک کاربران ";
+            // 
             // تراکنشهاToolStripMenuItem
             // 
             this.تراکنشهاToolStripMenuItem.Name = "تراکنشهاToolStripMenuItem";
@@ -152,12 +158,6 @@
             this.حسابداریToolStripMenuItem.Name = "حسابداریToolStripMenuItem";
             this.حسابداریToolStripMenuItem.Size = new System.Drawing.Size(99, 29);
             this.حسابداریToolStripMenuItem.Text = "حسابداری";
-            // 
-            // وضعیتاشتراککاربرانToolStripMenuItem
-            // 
-            this.وضعیتاشتراککاربرانToolStripMenuItem.Name = "وضعیتاشتراککاربرانToolStripMenuItem";
-            this.وضعیتاشتراککاربرانToolStripMenuItem.Size = new System.Drawing.Size(295, 34);
-            this.وضعیتاشتراککاربرانToolStripMenuItem.Text = "وضعیت اشتراک کاربران ";
             // 
             // ManagerForm
             // 

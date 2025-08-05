@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.usersTableAdapter = new WindowsFormsApp4.DB1DataSetTableAdapters.UsersTableAdapter();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dB1DataSet = new WindowsFormsApp4.DB1DataSet();
@@ -54,54 +53,18 @@
             this.Famile = new System.Windows.Forms.TextBox();
             this.Name = new System.Windows.Forms.TextBox();
             this.Naghsh = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.iDUsersDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.familyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mobilePhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subscriptionStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dB1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // usersTableAdapter
             // 
             this.usersTableAdapter.ClearBeforeFill = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDUsersDataGridViewTextBoxColumn,
-            this.fnameDataGridViewTextBoxColumn,
-            this.familyDataGridViewTextBoxColumn,
-            this.pnameDataGridViewTextBoxColumn,
-            this.userNameDataGridViewTextBoxColumn,
-            this.passwordDataGridViewTextBoxColumn,
-            this.mobilePhoneDataGridViewTextBoxColumn,
-            this.ageDataGridViewTextBoxColumn,
-            this.addresDataGridViewTextBoxColumn,
-            this.subscriptionStatusDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.usersBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 330);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(944, 163);
-            this.dataGridView1.TabIndex = 52;
             // 
             // usersBindingSource
             // 
@@ -290,104 +253,6 @@
             this.Naghsh.Size = new System.Drawing.Size(243, 28);
             this.Naghsh.TabIndex = 53;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(549, 133);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(243, 28);
-            this.comboBox1.TabIndex = 54;
-            // 
-            // iDUsersDataGridViewTextBoxColumn
-            // 
-            this.iDUsersDataGridViewTextBoxColumn.DataPropertyName = "ID_Users";
-            this.iDUsersDataGridViewTextBoxColumn.HeaderText = "ID_ketab";
-            this.iDUsersDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.iDUsersDataGridViewTextBoxColumn.Name = "iDUsersDataGridViewTextBoxColumn";
-            this.iDUsersDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDUsersDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // fnameDataGridViewTextBoxColumn
-            // 
-            this.fnameDataGridViewTextBoxColumn.DataPropertyName = "fname";
-            this.fnameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.fnameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.fnameDataGridViewTextBoxColumn.Name = "fnameDataGridViewTextBoxColumn";
-            this.fnameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.fnameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // familyDataGridViewTextBoxColumn
-            // 
-            this.familyDataGridViewTextBoxColumn.DataPropertyName = "Family";
-            this.familyDataGridViewTextBoxColumn.HeaderText = "Author";
-            this.familyDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.familyDataGridViewTextBoxColumn.Name = "familyDataGridViewTextBoxColumn";
-            this.familyDataGridViewTextBoxColumn.ReadOnly = true;
-            this.familyDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // pnameDataGridViewTextBoxColumn
-            // 
-            this.pnameDataGridViewTextBoxColumn.DataPropertyName = "p_name";
-            this.pnameDataGridViewTextBoxColumn.HeaderText = "Publisher";
-            this.pnameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.pnameDataGridViewTextBoxColumn.Name = "pnameDataGridViewTextBoxColumn";
-            this.pnameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.pnameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // userNameDataGridViewTextBoxColumn
-            // 
-            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "UserName";
-            this.userNameDataGridViewTextBoxColumn.HeaderText = "Year_of_publication";
-            this.userNameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
-            this.userNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.userNameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "Inventory_number";
-            this.passwordDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            this.passwordDataGridViewTextBoxColumn.ReadOnly = true;
-            this.passwordDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // mobilePhoneDataGridViewTextBoxColumn
-            // 
-            this.mobilePhoneDataGridViewTextBoxColumn.DataPropertyName = "MobilePhone";
-            this.mobilePhoneDataGridViewTextBoxColumn.HeaderText = "Category";
-            this.mobilePhoneDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.mobilePhoneDataGridViewTextBoxColumn.Name = "mobilePhoneDataGridViewTextBoxColumn";
-            this.mobilePhoneDataGridViewTextBoxColumn.ReadOnly = true;
-            this.mobilePhoneDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // ageDataGridViewTextBoxColumn
-            // 
-            this.ageDataGridViewTextBoxColumn.DataPropertyName = "Age";
-            this.ageDataGridViewTextBoxColumn.HeaderText = "Image";
-            this.ageDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
-            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ageDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // addresDataGridViewTextBoxColumn
-            // 
-            this.addresDataGridViewTextBoxColumn.DataPropertyName = "Addres";
-            this.addresDataGridViewTextBoxColumn.HeaderText = "ShelfLocation";
-            this.addresDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.addresDataGridViewTextBoxColumn.Name = "addresDataGridViewTextBoxColumn";
-            this.addresDataGridViewTextBoxColumn.ReadOnly = true;
-            this.addresDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // subscriptionStatusDataGridViewTextBoxColumn
-            // 
-            this.subscriptionStatusDataGridViewTextBoxColumn.DataPropertyName = "SubscriptionStatus";
-            this.subscriptionStatusDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.subscriptionStatusDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.subscriptionStatusDataGridViewTextBoxColumn.Name = "subscriptionStatusDataGridViewTextBoxColumn";
-            this.subscriptionStatusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.subscriptionStatusDataGridViewTextBoxColumn.Width = 150;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -405,17 +270,25 @@
             this.button1.TabIndex = 57;
             this.button1.Text = "Input Image";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(12, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(158, 197);
+            this.pictureBox1.TabIndex = 58;
+            this.pictureBox1.TabStop = false;
             // 
             // Add_book
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(968, 504);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.Naghsh);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Submit);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -437,10 +310,10 @@
             this.Controls.Add(this.Name);
             this.Name = "Add_book";
             this.Text = "Add_book";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dB1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -449,7 +322,6 @@
         #endregion
 
         private DB1DataSetTableAdapters.UsersTableAdapter usersTableAdapter;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource usersBindingSource;
         private System.Windows.Forms.BindingSource bindingSource1;
         private DB1DataSet dB1DataSet;
@@ -473,18 +345,8 @@
         private System.Windows.Forms.TextBox Famile;
         private System.Windows.Forms.TextBox Name;
         private System.Windows.Forms.ComboBox Naghsh;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDUsersDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn familyDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mobilePhoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ageDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addresDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn subscriptionStatusDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

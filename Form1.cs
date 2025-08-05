@@ -123,9 +123,10 @@ namespace WindowsFormsApp4
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Register register = new Register();
-            register.Show();
+            Register register = new Register(1);
             this.Hide();
+            register.FormClosed += (s, args) => { this.Show(); };
+            register.Show();
         }
     }
 }

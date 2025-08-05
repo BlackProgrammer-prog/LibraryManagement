@@ -17,7 +17,7 @@ namespace WindowsFormsApp4
     {
         string connectionString;
 
-        public Register()
+        public Register(int a)
         {
             InitializeComponent();
             InitConnection();
@@ -50,8 +50,8 @@ namespace WindowsFormsApp4
 
             using (OleDbConnection conn = new OleDbConnection(connectionString))
             {
-                try
-                {
+                //try
+                //{
                     conn.Open();
 
                     string insertUser = @"INSERT INTO Users 
@@ -81,20 +81,27 @@ namespace WindowsFormsApp4
                     DateTime oneYearLater = now.AddYears(1);
 
                     OleDbCommand cmdRel = new OleDbCommand(insertRel, conn);
-                    cmdRel.Parameters.AddWithValue("?", userId);
-                    cmdRel.Parameters.AddWithValue("?", studentRoleId);
-                    cmdRel.Parameters.AddWithValue("?", DateTime.Now);
-                    cmdRel.Parameters.AddWithValue("?", oneYearLater);
+                    cmdRel.Parameters.AddWithValue("?", userId.ToString());
+                    cmdRel.Parameters.AddWithValue("?", studentRoleId.ToString());
+                    cmdRel.Parameters.AddWithValue("?", DateTime.Now.ToShortTimeString());
+                    cmdRel.Parameters.AddWithValue("?", oneYearLater.ToShortDateString());
 
                     cmdRel.ExecuteNonQuery();
 
                     MessageBox.Show("ثبت‌نام با موفقیت انجام شد.");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("خطا در ثبت‌نام: " + ex.Message);
-                }
+                //}
+                //catch (Exception ex)
+                //{
+                //    MessageBox.Show("خطا در ثبت‌نام: " + ex.Message);
+                //}
             }
+        }
+
+        private void Register_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Form1 form = new Form1();
+            //form.Show();
+            
         }
     }
 }

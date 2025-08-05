@@ -21,5 +21,16 @@ namespace WindowsFormsApp4
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog op = new OpenFileDialog();
+            op.Filter = "(*.jpg;*.jpeg;*.png; *.bmp)| *.jpg; *.jpeg; *.png; *.bmp";
+            if (op.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Image = Image.FromFile(op.FileName);
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+        }
     }
 }
