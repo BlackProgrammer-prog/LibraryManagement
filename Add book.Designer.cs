@@ -36,26 +36,27 @@
             this.Submit = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.Subscription = new System.Windows.Forms.TextBox();
+            this.Description = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.Age = new System.Windows.Forms.TextBox();
-            this.NumPhone = new System.Windows.Forms.TextBox();
+            this.NumBook = new System.Windows.Forms.TextBox();
+            this.Year_of_publication = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.Password = new System.Windows.Forms.TextBox();
+            this.Publisher = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.UserName = new System.Windows.Forms.TextBox();
-            this.Fname = new System.Windows.Forms.TextBox();
+            this.Author = new System.Windows.Forms.TextBox();
+            this.nameBook = new System.Windows.Forms.TextBox();
             this.Famile = new System.Windows.Forms.TextBox();
             this.Name = new System.Windows.Forms.TextBox();
-            this.Naghsh = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Image = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Category = new System.Windows.Forms.TextBox();
+            this.ShelfLocation = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dB1DataSet)).BeginInit();
@@ -87,7 +88,7 @@
             this.Submit.Name = "Submit";
             this.Submit.Size = new System.Drawing.Size(110, 48);
             this.Submit.TabIndex = 51;
-            this.Submit.Text = "ثبت کاربر";
+            this.Submit.Text = "ثبت کتاب";
             this.Submit.UseVisualStyleBackColor = true;
             this.Submit.Click += new System.EventHandler(this.Submit_Click);
             // 
@@ -109,13 +110,13 @@
             this.label11.TabIndex = 46;
             this.label11.Text = ":توضیحات";
             // 
-            // Subscription
+            // Description
             // 
-            this.Subscription.Location = new System.Drawing.Point(189, 173);
-            this.Subscription.Multiline = true;
-            this.Subscription.Name = "Subscription";
-            this.Subscription.Size = new System.Drawing.Size(604, 34);
-            this.Subscription.TabIndex = 45;
+            this.Description.Location = new System.Drawing.Point(189, 173);
+            this.Description.Multiline = true;
+            this.Description.Name = "Description";
+            this.Description.Size = new System.Drawing.Size(604, 34);
+            this.Description.TabIndex = 45;
             // 
             // label10
             // 
@@ -135,21 +136,21 @@
             this.label9.TabIndex = 42;
             this.label9.Text = ":تعداد کتاب";
             // 
-            // Age
+            // NumBook
             // 
-            this.Age.Location = new System.Drawing.Point(549, 93);
-            this.Age.Multiline = true;
-            this.Age.Name = "Age";
-            this.Age.Size = new System.Drawing.Size(243, 34);
-            this.Age.TabIndex = 41;
+            this.NumBook.Location = new System.Drawing.Point(549, 93);
+            this.NumBook.Multiline = true;
+            this.NumBook.Name = "NumBook";
+            this.NumBook.Size = new System.Drawing.Size(243, 34);
+            this.NumBook.TabIndex = 41;
             // 
-            // NumPhone
+            // Year_of_publication
             // 
-            this.NumPhone.Location = new System.Drawing.Point(189, 53);
-            this.NumPhone.Multiline = true;
-            this.NumPhone.Name = "NumPhone";
-            this.NumPhone.Size = new System.Drawing.Size(243, 34);
-            this.NumPhone.TabIndex = 40;
+            this.Year_of_publication.Location = new System.Drawing.Point(189, 53);
+            this.Year_of_publication.Multiline = true;
+            this.Year_of_publication.Name = "Year_of_publication";
+            this.Year_of_publication.Size = new System.Drawing.Size(243, 34);
+            this.Year_of_publication.TabIndex = 40;
             // 
             // label8
             // 
@@ -160,13 +161,13 @@
             this.label8.TabIndex = 39;
             this.label8.Text = ":زمان انتشار";
             // 
-            // Password
+            // Publisher
             // 
-            this.Password.Location = new System.Drawing.Point(549, 53);
-            this.Password.Multiline = true;
-            this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(243, 34);
-            this.Password.TabIndex = 38;
+            this.Publisher.Location = new System.Drawing.Point(549, 53);
+            this.Publisher.Multiline = true;
+            this.Publisher.Name = "Publisher";
+            this.Publisher.Size = new System.Drawing.Size(243, 34);
+            this.Publisher.TabIndex = 38;
             // 
             // label7
             // 
@@ -213,21 +214,21 @@
             this.label2.TabIndex = 31;
             this.label2.Text = ":نام";
             // 
-            // UserName
+            // Author
             // 
-            this.UserName.Location = new System.Drawing.Point(189, 13);
-            this.UserName.Multiline = true;
-            this.UserName.Name = "UserName";
-            this.UserName.Size = new System.Drawing.Size(243, 34);
-            this.UserName.TabIndex = 30;
+            this.Author.Location = new System.Drawing.Point(189, 13);
+            this.Author.Multiline = true;
+            this.Author.Name = "Author";
+            this.Author.Size = new System.Drawing.Size(243, 34);
+            this.Author.TabIndex = 30;
             // 
-            // Fname
+            // nameBook
             // 
-            this.Fname.Location = new System.Drawing.Point(549, 10);
-            this.Fname.Multiline = true;
-            this.Fname.Name = "Fname";
-            this.Fname.Size = new System.Drawing.Size(243, 34);
-            this.Fname.TabIndex = 29;
+            this.nameBook.Location = new System.Drawing.Point(549, 10);
+            this.nameBook.Multiline = true;
+            this.nameBook.Name = "nameBook";
+            this.nameBook.Size = new System.Drawing.Size(243, 34);
+            this.nameBook.TabIndex = 29;
             // 
             // Famile
             // 
@@ -245,14 +246,6 @@
             this.Name.Size = new System.Drawing.Size(114, 14);
             this.Name.TabIndex = 27;
             // 
-            // Naghsh
-            // 
-            this.Naghsh.FormattingEnabled = true;
-            this.Naghsh.Location = new System.Drawing.Point(189, 99);
-            this.Naghsh.Name = "Naghsh";
-            this.Naghsh.Size = new System.Drawing.Size(243, 28);
-            this.Naghsh.TabIndex = 53;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -262,15 +255,15 @@
             this.label1.TabIndex = 56;
             this.label1.Text = ":عکس کتاب";
             // 
-            // button1
+            // Image
             // 
-            this.button1.Location = new System.Drawing.Point(255, 136);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 29);
-            this.button1.TabIndex = 57;
-            this.button1.Text = "Input Image";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Image.Location = new System.Drawing.Point(255, 136);
+            this.Image.Name = "Image";
+            this.Image.Size = new System.Drawing.Size(133, 29);
+            this.Image.TabIndex = 57;
+            this.Image.Text = "Input Image";
+            this.Image.UseVisualStyleBackColor = true;
+            this.Image.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -280,32 +273,49 @@
             this.pictureBox1.TabIndex = 58;
             this.pictureBox1.TabStop = false;
             // 
+            // Category
+            // 
+            this.Category.Location = new System.Drawing.Point(189, 93);
+            this.Category.Multiline = true;
+            this.Category.Name = "Category";
+            this.Category.Size = new System.Drawing.Size(243, 34);
+            this.Category.TabIndex = 59;
+            // 
+            // ShelfLocation
+            // 
+            this.ShelfLocation.Location = new System.Drawing.Point(549, 133);
+            this.ShelfLocation.Multiline = true;
+            this.ShelfLocation.Name = "ShelfLocation";
+            this.ShelfLocation.Size = new System.Drawing.Size(243, 34);
+            this.ShelfLocation.TabIndex = 60;
+            // 
             // Add_book
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(968, 504);
+            this.Controls.Add(this.ShelfLocation);
+            this.Controls.Add(this.Category);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Image);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.Naghsh);
             this.Controls.Add(this.Submit);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.Subscription);
+            this.Controls.Add(this.Description);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.Age);
-            this.Controls.Add(this.NumPhone);
+            this.Controls.Add(this.NumBook);
+            this.Controls.Add(this.Year_of_publication);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.Password);
+            this.Controls.Add(this.Publisher);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.UserName);
-            this.Controls.Add(this.Fname);
+            this.Controls.Add(this.Author);
+            this.Controls.Add(this.nameBook);
             this.Controls.Add(this.Famile);
             this.Controls.Add(this.Name);
             this.Name = "Add_book";
@@ -328,25 +338,26 @@
         private System.Windows.Forms.Button Submit;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox Subscription;
+        private System.Windows.Forms.TextBox Description;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox Age;
-        private System.Windows.Forms.TextBox NumPhone;
+        private System.Windows.Forms.TextBox NumBook;
+        private System.Windows.Forms.TextBox Year_of_publication;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox Password;
+        private System.Windows.Forms.TextBox Publisher;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox UserName;
-        private System.Windows.Forms.TextBox Fname;
+        private System.Windows.Forms.TextBox Author;
+        private System.Windows.Forms.TextBox nameBook;
         private System.Windows.Forms.TextBox Famile;
         private System.Windows.Forms.TextBox Name;
-        private System.Windows.Forms.ComboBox Naghsh;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Image;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox Category;
+        private System.Windows.Forms.TextBox ShelfLocation;
     }
 }
